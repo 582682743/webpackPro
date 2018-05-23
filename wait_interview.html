@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>采访视频未开始</title>
+</head>
+<body>
+<div class="main clearfix">
+    <div class="contain_left fl">
+        <div class="top">
+            <span class="logo">
+                <i class="logo_icon"></i>
+                <span class="tit">Video Interview</span>
+            </span>
+            <i class="sign_mark fr">
+                <div class="interviewer">
+                    <div class="interviewer_msg">
+                        <p class="guest">Guest: </p>
+                        <p class="guest_name">Keven <br>
+                            Homestay </p>
+                    </div>
+                    <div class="interviewer_msg student_msg">
+                        <span class="border-arrow"> <em></em> <ins></ins> </span>
+                        <p class="student">Student:  </p>
+                        <p class="student_name">GAO XiaoFang</p>
+                        <p class="student_grade">Bishop McCort Catholic Grade G10</p>
+                    </div>
+                </div>
+            </i>
+        </div>
+        <section class="video_main" id="participants">
+            <div class="partner"></div>
+            <div class="cover" id="cover_black">
+                <p class="tips_tit">Interview not start</p>
+                <p class="tips_msg">Please click the start button to start the video interview</p>
+            </div>
+        </section>
+        <div class="bottom" id="wait_interview">
+            <span class="camera_icon"></span>
+            <span class="voice_icon"></span>
+            <span class="start_video" onclick="register(); return false;">start</span>
+        </div>
+        <div class="bottom" id="interview">
+            <span class="operation" data-onOff="true"><i class="camera_icon"></i><b>Live</b></span>
+            <span class="operation"><i class="voice_icon"></i><b>Un-Sound</b></span>
+            <span class="operation"><i class="time_icon"></i><b class="time">00:40:01</b></span>
+            <span class="operation"><i class="pause_icon"></i><b>Pause</b></span>
+            <span class="operation complete">
+                <i class="complete_icon"></i><b>Complete Interview</b>
+            </span>
+        </div>
+    </div>
+    <div class="contain_right fr">
+        <div class="top tr">
+            <span class="add_question tl">Add question <i class="add_icon"></i></span>
+        </div>
+        <ul class="question_list">
+            <li data-num="1" class="active">
+                <span class="type_icon type_icon1"><i class="no_read">1</i></span>
+            </li>
+            <li data-num="2">
+                <span class="type_icon type_icon2"><i class="no_read">4</i></span>
+            </li>
+            <li data-num="3">
+                <span class="type_icon type_icon3"><i class="no_read">2</i></span>
+            </li>
+            <li data-num="4">
+                <span class="type_icon type_icon4"><i class="no_read">3</i></span>
+            </li>
+        </ul>
+        <div id="questionnaire_survey">
+            <div class="question_all question_all1">
+                <p class="question_tit">Homestay</p>
+                <ul class="question_cont">
+                    <li class="question_mass clearfix active">
+                        <div class="fl number">1</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family</p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio" data-val="Happy">
+                                        <i></i>
+                                        <input class="opacity_input" type="radio" value="happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="delete_question">X</span>
+                        <div class="sure_delete tc">
+                            <p class="sure">Are you sure you want to delete </p>
+                            <p class="tc">
+                                <span class="yes">Yes</span>
+                                <span class="cancel">Cancel</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">2</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">3</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">4</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question_all question_all2" style="display: none">
+                <p class="question_tit">Homestay Life</p>
+                <ul class="question_cont">
+                    <li class="question_mass clearfix">
+                        <div class="fl number">1</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family</p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">2</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">3</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">4</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question_all question_all3" style="display: none">
+                <p class="question_tit">Extracurricular</p>
+                <ul class="question_cont">
+                    <li class="question_mass clearfix">
+                        <div class="fl number">1</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family</p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">2</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">3</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">4</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question_all question_all4" style="display: none">
+                <p class="question_tit">Psychological</p>
+                <ul class="question_cont">
+                    <li class="question_mass clearfix">
+                        <div class="fl number">1</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family</p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">2</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">3</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="question_mass clearfix">
+                        <div class="fl number">4</div>
+                        <div class="fl question_an">
+                            <p class="subject">Are you happy with your host family </p>
+                            <div class="answer">
+                                <span data-key="1" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Happy">
+                                    </span>
+                                    <label>Happy</label>
+                                </span>
+                                <span data-key="2" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Mostly happy">
+                                    </span>
+                                    <label>Mostly happy</label>
+                                </span>
+                                <span data-key="3" class="radioBox">
+                                    <span class="radio">
+                                        <i class=""></i>
+                                        <input class="opacity_input" type="radio" value="Not happy">
+                                    </span>
+                                    <label>Not happy</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="text" name="name" value="admin" placeholder="user" id="name">
+<input type="text" name="room" placeholder="room" id="roomName">
+</body>
+<script src="../../plugin/jquery.min.js"></script>
+<script src="../../plugin/video_modeles/adapter.js"></script>
+<script src="../../plugin/video_modeles/kurento-utils.js"></script>
+<script src="../../plugin/video_modeles/kurento-jsonrpc.js"></script>
+<script src="../../plugin/video_modeles/console.js"></script>
+<script src="../../plugin/video_modeles/EventEmitter.js"></script>
+<script src="../../plugin/video_modeles/KurentoRoom.js"></script>
+<script src="../../plugin/video_modeles/demo.js"></script>
+<script src="../../plugin/video_modeles/color.js"></script>
+<script src="../../plugin/video_modeles/stats.js"></script>
+</html>

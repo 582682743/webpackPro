@@ -1,0 +1,120 @@
+@function torem($px){//$px为需要转换的字号
+  @return $px / 40px * 1rem; //20px为根字体大小
+}
+.evaluation{
+  background: linear-gradient(#ff7266, #f0335e);
+  color: #FFFFFF;
+  .headerBg{
+    background: url("../images/interviewed/interviewedBg.jpg");
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    height: torem(950px);
+    .logo{
+      margin: torem(40px) 0 torem(100px) torem(55px);
+      background: url("../images/interviewed/interviewedLogo.png") no-repeat;
+      background-size: 100%;
+      width: torem(373px);
+      height: torem(30px);
+    }
+    .userAvatar{
+      margin: 0 auto;
+      width: torem(1125px);
+      height: torem(500px);
+      background:url("../images/interviewed/interviewedRound.png") no-repeat center 40px;
+      background-size: 100%;
+      font-size: torem(26px);
+      .teacher{
+        text-align: center;
+        margin-left: torem(155px);
+      }
+      .student{
+        text-align: center;
+        margin-left: torem(330px);
+      }
+      .teacher img,.student img{
+        width: torem(208px);
+        height: torem(208px);
+        border-radius: 112px;
+        border:6px solid #FFFFFF;
+      }
+      .bannerCon{
+        padding: torem(90px) 0 0 torem(270px);
+        font-size: torem(28px);
+      }
+      p{
+        line-height: torem(36px);
+        margin-top: torem(20px);
+      }
+    }
+  }
+}
+.content{
+  width: torem(902px);
+  margin: 0 auto;
+  padding-top: torem(108px);
+  .evaluationCon{
+    width: torem(580px);
+    margin: 0 auto;
+    h1{
+      font-size: torem(40px);
+    }
+    table{
+      margin-top: torem(80px);
+      thead tr th{
+        width: torem(80px);
+      }
+    }
+    table tbody tr td{
+      padding-left: torem(15px);
+      a{
+        background:url("../images/interviewed/interviewedIcon2.png") no-repeat;
+        background-size: 100%;
+        width: torem(50px);
+        height: torem(50px);
+        display: block;
+      }
+      .iconActive{
+        background:url("../images/interviewed/interviewedIcon.png") no-repeat;
+        background-size: 100%;
+        width: torem(50px);
+        height: torem(50px);
+        display: block;
+      }
+    }
+  }
+  .textareaEnter{
+    padding-bottom: 10px;
+    textarea{
+      width: torem(920px);
+      height: torem(280px);
+      border: 1px solid #d6dae4;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      padding: 8px;
+      margin: torem(76px) 0 torem(58px) 0;
+      box-shadow: 0px 2px 2px #e2e3e8;
+      resize: none;
+    }
+    a{
+      display: block;
+      width: torem(378px);
+      height: torem(69px);
+      background: #d0d1d7;
+      margin: 0 auto;
+      text-align: center;
+      line-height: torem(69px);
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+      color: #FFFFFF;
+    }
+  }
+  .copyRight{
+    text-align: center;
+    font-size: torem(16px);
+    color: #d0d1d7;
+    margin: torem(151px) 0 torem(20px) 0;
+  }
+}
